@@ -355,7 +355,7 @@ Resources:
                       Action:
                           SimpleScalingPolicyConfiguration:
                               AdjustmentType: CHANGE_IN_CAPACITY
-                              ScalingAdjustment: 1
+                              ScalingAdjustment: -1
                               CoolDown: 300
                       Trigger:
                           CloudWatchAlarmDefinition:
@@ -376,7 +376,7 @@ Resources:
                       Action:
                           SimpleScalingPolicyConfiguration:
                               AdjustmentType: CHANGE_IN_CAPACITY
-                              ScalingAdjustment: -1
+                              ScalingAdjustment: 1
                               CoolDown: 300
                       Trigger:
                           CloudWatchAlarmDefinition:
